@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Todo List--Prashant Kumar</title>
+
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <header>
+        <h3>Task Management</h3>
+    
+        <div class="top">
+            <input id="todo_input" type="text" placeholder="Please enter your task here" class="input w-full max-w-xs">
+            <button id="add-Btn" class="btn btn0">
+                <i  class="fa-solid fa-circle-plus"></i>
+            </button>
+        </div>
+    </header>
+   
+<!--  Mid Section -->
+    <div id="mid-sec">
+        <button id="DelBtn" class="btn btn3">Delete Completed</button>
+        <button id="DelAll" class="btn btn1">Delete All</button>
+        <div class="drop">
+            <button class="btn btn2">Filter</button>
+            <div class="drop_content">
+                
+                    <a href="#" class="btn4" id="all"> All</a>
+                    <a href="#" class="btn4" id="rem"> Remaining</a>
+                    <a href="#" class="btn4" id="com"> Completed</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- The task List Updation  -->
+    <ul id="all-todos" class="todos-list">
+        
+    </ul>   
+        
+    <!--Footer  -->
+    <div class="Task_status">
+        <p>Pending -<span id="p-count"> 0</span></p>
+        <p>Complete  -<span id="c-count"> 0</span></p>
+        <p>Total Task  -<span id="total-count"> 0</span></p>
+    </div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
