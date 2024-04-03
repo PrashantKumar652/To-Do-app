@@ -64,7 +64,7 @@ function update() {
 function add() {
     var value = todoInput.value.trim();
     if (value === '') {                     // To check if Input is empty
-        alert("Task cannot be empty") 
+        alert("Task can not be empty") 
         return;
     }
     if (todoList.some(task => task.task.toLowerCase() === value.toLowerCase())) {   //To check the Duplicate 
